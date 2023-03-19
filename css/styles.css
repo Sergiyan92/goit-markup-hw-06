@@ -6,6 +6,7 @@
 --white-color:#FFFFFF;
 --Subtle-backgrounds:#E7E9FC;
 --Light-color:#F4F4FD;
+--Light-slate:#8E8F99; 
 --transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -491,6 +492,7 @@ body {
     background-color:#FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 0 24px 24px 24px;
 }
 .modal-close-button {
     position: absolute;
@@ -520,5 +522,67 @@ body {
 .modal-close-button:hover .modal-btm-close-icon,
 .modal-close-button:focus .modal-btm-close-icon {
     fill: var(--white-color);
+}
+/* =======================MODAL-FORM======================= */
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+.modal-form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--main-color-dark);
+    border-radius: 4px;
+    padding-left: 38px;
+}
+.modal-form-input:focus {
+    border-color:var(--Primary-Brand-color) ;
+}
+.modal-form-input-descr {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    margin-bottom: 4px;
+    letter-spacing: 0.01em;
+    color: var(--Light-slate);
+
+}
+.modal-form-field {
+    margin-bottom: 8px;
+}
+.modal-form-input-wraper {
+    display: block;
+    position: relative;
+}
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translate(0, -50%);
+}
+.modal-form-message {
+    width: 100%;
+    border: 1px solid var(--main-color-dark);
+    border-radius: 4px;
+    resize: none;
+    padding-left: 16px;
+}
+.link-text {       
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.04em;
+    color: var(--Light-slate);
+}
+.title-modal {  
+    padding-top: 72px;
+    margin-bottom: 16px;    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--main-color-dark);
 }
 /* =======================/MODAL-WINDOW======================= */
