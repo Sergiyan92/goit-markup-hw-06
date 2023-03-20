@@ -356,21 +356,24 @@
                 </li>
             </ul>
         </div>
-        <p class="footer-modal-title">Subscribe</p>
-            <form class="footer-modal">                
+        <div class="footer-subscribe">
+            <p class="footer-subscribe-title">Subscribe</p> 
+            <form class="footer-subscribe-form ">                               
                 <input 
                     type="email" 
-                    class="footer-modal-form-input"                 
+                    class="footer-subscribe-form-input"                 
                     name="user_email"
                     placeholder="E-mail"
                     required
                     />
-                    <button type="submit" class="">Subscribe</button>
-
-
-            </form> 
-        </div>
-        
+                <button type="submit" class="Subscribe-btn">Subscribe 
+                    <svg class="Subscribe-btn-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-plane"></use>
+                    </svg>
+                </button>
+            </form>
+        </div> 
+        </div>        
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">

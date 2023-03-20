@@ -379,21 +379,70 @@ body {
     text-transform: uppercase;        
     color:var(--Light-color);
 }
-.footer-modal {
+.footer-subscribe {
+    margin-left: 80px;
+}
+.footer-subscribe-form {    
     display: flex;
 
 }
-.footer-modal-title {
+.footer-subscribe-title {
+    margin-bottom: 16px;
     color: var(--white-color);
 }
-.footer-modal-form-input {
+.footer-subscribe-form-input {    
     width: 264px;
     height: 40px;
-    border: 1px solid var(--main-color-dark);
+    border: 1px solid var(--white-color);
     border-radius: 4px;
-    padding-left: 38px;
+    padding-left: 16px;       
+    background-color: var(--main-color-dark);
     transition: border-color var(--transition-duration);
+    color:var(--white-color) ;
+    outline: none;
+
 }
+.footer-subscribe-form-input::placeholder {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+        
+}
+
+.Subscribe-btn {
+    display: flex;
+    min-width: 165px;
+    height: 40px;
+    margin-left: 24px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    padding: 8px 24x;
+    border-radius: 4px;
+    border: none;    
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: var(--Primary-Brand-color);
+    transition: background-color var(--transition-duration);
+    color: var(--white-color);
+    cursor: pointer;   
+}
+.Subscribe-btn:hover,
+.Subscribe-btn:focus {
+    background-color: var(--Pressed-state-color);
+    
+}
+.Subscribe-btn-icon {
+    margin-left: 16px;
+}
+   
+
 
 /* =======================APPLY======================= */
 .apply-content:hover{
@@ -664,7 +713,6 @@ body {
 }
 .modal-form-submit:hover,
 .modal-form-submit:focus {
-    background-color: var(--Pressed-state-color);
-    color:var(--white-color);
+    background-color: var(--Pressed-state-color);    
 }
 /* =======================/MODAL-WINDOW======================= */
